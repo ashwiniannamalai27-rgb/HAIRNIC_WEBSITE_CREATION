@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hairnic - Single Product Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar-container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h2>Hairnic</h2>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto align-items-lg-center">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="product.html" class="nav-item nav-link">Products</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="how-to-use.html" class="dropdown-item">How To Use</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="blog.html" class="dropdown-item">Blog Articles</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="product.html" class="btn btn-dark py-2 px-4 ms-lg-3 d-none d-lg-inline-flex">Shop Now</a>
+                    <!-- Cart Icon Button -->
+<a href="#" class="btn btn-outline-dark position-relative py-2 px-3 ms-2">
+    <i class="fa fa-shopping-cart"></i>
+    <span id="cart-counter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        0
+    </span>
+</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary hero-header">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h4 class="fw-light text-white mb-2">Natural & Organic</h4>
+                    <h1 class="display-5 text-white mb-3">Hair <span class="fw-light text-dark">Shampoo</span> For Healthy Hair</h1>
+                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat rutrum lectus, sed auctor ex malesuada id. Orci varius natoque penatibus et magnis dis parturient montes.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-2">
+                        <a href="product.html" class="btn btn-dark py-2 px-4">Shop Now</a>
+                        <a href="contact.html" class="btn btn-outline-dark py-2 px-4">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/shampoo.png" alt="Shampoo Hero" style="max-height: 440px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Feature Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item bg-primary text-center p-3">
+                        <div class="border py-5 px-3 h-100 d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa fa-leaf fa-3x text-dark mb-3"></i>
+                            <h5 class="text-white mb-0">100% Natural</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item bg-primary text-center p-3">
+                        <div class="border py-5 px-3 h-100 d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa fa-tint-slash fa-3x text-dark mb-3"></i>
+                            <h5 class="text-white mb-0">Anti Hair Fall</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="feature-item bg-primary text-center p-3">
+                        <div class="border py-5 px-3 h-100 d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa fa-shield-alt fa-3x text-dark mb-3"></i>
+                            <h5 class="text-white mb-0">Hypoallergenic</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/shampoo-1.png" alt="About Shampoo" style="max-height: 400px;">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-primary mb-3">Healthy Hair <span class="fw-light text-dark">Is A Symbol Of Our Beauty</span></h2>
+                    <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat, nibh erat tempus risus, vitae porttitor purus nisl vitae purus.</p>
+                    <p class="mb-4">Praesent tristique odio ut rutrum pellentesque. Fusce eget molestie est, at rutrum est. Aliqu diam amet diam et eos labore stet no labore lorem sit.</p>
+                    <a class="btn btn-primary py-2 px-4" href="about.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Deal Section with Real-Time Countdown Start -->
+    <div class="container-fluid deal py-5 my-5">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/shampoo-2.png" alt="Deal Shampoo" style="max-height: 380px;">
+                </div>
+                <div class="col-lg-6">
+                    <div class="deal-card p-4 text-center">
+                        <div class="border p-4">
+                            <p class="text-muted mb-1 text-uppercase fw-bold">Natural & Organic Shampoo</p>
+                            <h3 class="fw-bold text-uppercase mb-3">Deals of the Day</h3>
+                            <h1 class="text-muted mb-1 text-uppercase fw-bold">$99.99</h1>
+                            <h5 class="mb-2">Fresh Organic Shampoo</h5>
+                            <p class="text-muted mb-4">Limited time offer on all premium organic hair repair kits.</p>
+                            <div class="row g-0 cdt mb-4">
+                                <div class="col-3">
+                                    <h1 class="display-6" id="cdt-days">00</h1>
+                                    <small class="text-muted d-block">Days</small>
+                                </div>
+                                <div class="col-3">
+                                    <h1 class="display-6" id="cdt-hours">00</h1>
+                                    <small class="text-muted d-block">Hours</small>
+                                </div>
+                                <div class="col-3">
+                                    <h1 class="display-6" id="cdt-minutes">00</h1>
+                                    <small class="text-muted d-block">Minutes</small>
+                                </div>
+                                <div class="col-3">
+                                    <h1 class="display-6" id="cdt-seconds">00</h1>
+                                    <small class="text-muted d-block">Seconds</small>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-2 px-4" href="product.html">Grab Deal Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Deal End -->
+
+    <!-- Benefits Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 600px;">
+                <h2 class="text-primary mb-2"><span class="fw-light text-dark">Best Benefits Of Our</span> Natural Hair Shampoo</h2>
+                <p class="text-muted">Formulated with certified organic botanicals to cleanse, nourish, and protect.</p>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-4 col-md-6 order-1">
+                    <div class="d-flex mb-4 align-items-start">
+                        <div class="btn-square rounded-circle border border-primary flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Natural & Organic</h5>
+                            <p class="text-muted small mb-0">Contains no parabens, phthalates, or harsh sulfates.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 align-items-start">
+                        <div class="btn-square rounded-circle border border-primary flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Anti Hair Fall</h5>
+                            <p class="text-muted small mb-0">Strengthens the root barrier and minimizes strand breakage.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="btn-square rounded-circle border border-primary flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Anti-Dandruff</h5>
+                            <p class="text-muted small mb-0">Soothes itchy scalp and controls dry flakes naturally.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center order-3 order-lg-2">
+                    <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/shampoo.png" alt="Benefits Shampoo" style="max-height: 380px;">
+                </div>
+                <div class="col-lg-4 col-md-6 order-2 order-lg-3">
+                    <div class="d-flex mb-4 align-items-start">
+                        <div class="btn-square rounded-circle border border-primary flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Zero Side Effects</h5>
+                            <p class="text-muted small mb-0">Safe for daily application across all hair types.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 align-items-start">
+                        <div class="btn-square rounded-circle border border-primary flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">No Skin Irritation</h5>
+                            <p class="text-muted small mb-0">Dermatologically tested and hypoallergenic certified.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="btn-square rounded-circle border border-primary flex-shrink-0 me-3" style="width: 50px; height: 50px;">
+                            <i class="fa fa-check text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Natural Fragrance</h5>
+                            <p class="text-muted small mb-0">Scented purely with cold-pressed floral essential oils.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Benefits End -->
+
+    <!-- How To Use Start -->
+    <div class="container-fluid bg-primary py-5 my-5">
+        <div class="container text-white py-4">
+            <div class="mx-auto text-center mb-5" style="max-width: 600px;">
+                <h2 class="text-white mb-2"><span class="fw-light text-dark">How To Use Our</span> Natural Shampoo</h2>
+                <p class="text-white-50">Follow these 3 easy steps for fuller, healthier hair.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="how-to-use-box text-center">
+                        <div class="how-to-use-icon border border-white">
+                            <i class="fa fa-tint fa-2x text-white"></i>
+                        </div>
+                        <h5 class="text-white mb-2">1. Wet Hair Thoroughly</h5>
+                        <p class="text-white-50 small mb-0">Rinse scalp and hair with lukewarm water to open follicles.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="how-to-use-box text-center">
+                        <div class="how-to-use-icon border border-white">
+                            <i class="fa fa-tint fa-2x text-white"></i>
+                        </div>
+                        <h5 class="text-white mb-2">2. Massage Into Scalp</h5>
+                        <p class="text-white-50 small mb-0">Apply a coin-sized amount and work into a rich lather for 2 mins.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="how-to-use-box text-center">
+                        <div class="how-to-use-icon border border-white">
+                            <i class="fa fa-shower fa-2x text-white"></i>
+                        </div>
+                        <h5 class="text-white mb-2">3. Rinse Clean</h5>
+                        <p class="text-white-50 small mb-0">Wash completely with cold or lukewarm water and towel dry gently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How To Use End -->
+
+    <!-- Product Grid Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 600px;">
+                <h2 class="text-primary mb-2"><span class="fw-light text-dark">Our Natural</span> Hair Products</h2>
+                <p class="text-muted">Explore our dermatologist-recommended line of hair care essentials.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-item border p-4 h-100 text-center">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-1.png" alt="Hair Shining Shampoo">
+                        <div class="mb-2 text-warning small">
+                            <i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i>
+                            <span class="text-muted">(99)</span>
+                        </div>
+                        <h6 class="mb-2">Hair Shining Shampoo</h6>
+                        <h5 class="text-primary mb-3">$99.99</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-item border p-4 h-100 text-center">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-2.png" alt="Anti-dandruff Shampoo">
+                        <div class="mb-2 text-warning small">
+                            <i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i>
+                            <span class="text-muted">(99)</span>
+                        </div>
+                        <h6 class="mb-2">Anti-dandruff Shampoo</h6>
+                        <h5 class="text-primary mb-3">$99.99</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-item border p-4 h-100 text-center">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-1.png" alt="Anti Hair Fall Shampoo">
+                        <div class="mb-2 text-warning small">
+                            <i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i>
+                            <span class="text-muted">(99)</span>
+                        </div>
+                        <h6 class="mb-2">Anti Hair Fall Shampoo</h6>
+                        <h5 class="text-primary mb-3">$99.99</h5>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-item border p-4 h-100 text-center">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-2.png" alt="Hair Growing Shampoo">
+                        <div class="mb-2 text-warning small">
+                            <i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i><i class="fa fa-star text-primary"></i>
+                            <span class="text-muted">(99)</span>
+                        </div>
+                        <h6 class="mb-2">Hair Growing Shampoo</h6>
+                        <h5 class="text-primary mb-3">$99.99</h5>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Grid End -->
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary py-5 my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between g-4">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h2 class="text-white mb-2"><span class="fw-light text-dark">Subscribe To Our</span> Newsletter</h2>
+                    <p class="text-white-50 mb-0">Get an instant 30% voucher code directly in your inbox.</p>
+                </div>
+                <div class="col-lg-5">
+                    <form action="#" method="POST" class="newsletter-wrapper m-0 ms-lg-auto">
+                        <div class="input-group">
+                            <input class="form-control rounded-pill-start py-3 ps-4" type="email" placeholder="Enter your email address" required style="border-radius: 50px 0 0 50px; border: none; outline: none;">
+                            <button class="btn btn-dark px-4" type="submit" style="border-radius: 0 50px 50px 0;">
+                                <i class="fa fa-paper-plane me-2"></i> Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white footer pt-5">
+        <div class="container pb-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-primary mb-3">Hairnic</h3>
+                    <p class="text-muted small">Pure botanical solutions created for nourished, vibrant, and thicker hair without harsh industrial chemicals.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Get In Touch</h5>
+                    <p class="text-muted small mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                    <p class="text-muted small mb-2"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 67890</p>
+                    <p class="text-muted small mb-3"><i class="fa fa-envelope text-primary me-2"></i>info@hairnic.com</p>
+                    <div class="d-flex gap-2">
+                        <a class="btn btn-square btn-outline-primary" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-primary" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Our Products</h5>
+                    <a class="btn btn-link" href="#">Hair Shining Shampoo</a>
+                    <a class="btn btn-link" href="#">Anti-dandruff Shampoo</a>
+                    <a class="btn btn-link" href="#">Anti Hair Fall Shampoo</a>
+                    <a class="btn btn-link" href="#">Hair Growing Shampoo</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                   <h5 class="mb-3">Quick Links</h5>
+    <a class="btn btn-link" href="about.html">About Us</a>
+    <a class="btn btn-link" href="contact.html">Contact Us</a>
+    <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+    <a class="btn btn-link" href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top py-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <small class="text-muted">&copy; Hairnic, All Rights Reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <small><a href="index.html">Home</a></small>
+                        <small><a href="privacy.html">Cookies</a></small>
+                        <small><a href="contact.html">Help</a></small>
+                        <small><a href="contact.html">FAQs</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Real-time Countdown & Page Features Script -->
+    <script>
+      (function () {
+        "use strict";
+
+        // 1. Target Countdown Timer: 7 days from now
+        var targetTime = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+
+        var daysEl = document.getElementById("cdt-days");
+        var hoursEl = document.getElementById("cdt-hours");
+        var minsEl = document.getElementById("cdt-minutes");
+        var secsEl = document.getElementById("cdt-seconds");
+
+        function updateCountdown() {
+          var now = new Date().getTime();
+          var distance = targetTime - now;
+
+          if (distance < 0) {
+            clearInterval(timer);
+            return;
+          }
+
+          var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var s = Math.floor((distance % (1000 * 60)) / 1000);
+
+          var pad = function (n) {
+            return String(n).padStart(2, "0");
+          };
+
+          if (daysEl) daysEl.textContent = pad(d);
+          if (hoursEl) hoursEl.textContent = pad(h);
+          if (minsEl) minsEl.textContent = pad(m);
+          if (secsEl) secsEl.textContent = pad(s);
+        }
+
+        updateCountdown();
+        var timer = setInterval(updateCountdown, 1000);
+
+        // 2. Add To Cart Button Interactivity
+        document.querySelectorAll("button, a").forEach(function (button) {
+          if (button.textContent.trim().toLowerCase() === "add to cart") {
+            button.addEventListener("click", function (e) {
+              e.preventDefault();
+              var prev = button.textContent;
+              button.textContent = "Added!";
+              setTimeout(function () {
+                button.textContent = prev;
+              }, 1500);
+            });
+          }
+        });
+      })();
+    <!-- ADD THIS SCRIPT BLOCK HERE -->
+      (function () {
+        "use strict";
+
+        // 1. Initial cart badge counter setup
+        var cartBadge = document.getElementById("cart-counter");
+        var cartCount = parseInt(localStorage.getItem("hairnic_cart_count")) || 0;
+
+        function renderCartCount() {
+          if (cartBadge) {
+            cartBadge.textContent = cartCount;
+          }
+        }
+        renderCartCount();
+
+        // 2. Global click listener for all Add To Cart links/buttons
+        document.addEventListener("click", function (e) {
+          var target = e.target.closest("a, button");
+          if (!target) return;
+
+          var btnText = (target.innerText || target.textContent || "").trim().toLowerCase();
+
+          if (btnText === "add to cart") {
+            e.preventDefault();
+            e.stopPropagation();
+
+            cartCount++;
+            localStorage.setItem("hairnic_cart_count", cartCount);
+            renderCartCount();
+
+            var originalText = target.innerText;
+
+            target.innerText = "Added to the Cart";
+            target.classList.remove("btn-outline-primary");
+            target.classList.add("btn-success");
+            target.style.pointerEvents = "none";
+
+            setTimeout(function () {
+              target.innerText = originalText;
+              target.classList.remove("btn-success");
+              target.classList.add("btn-outline-primary");
+              target.style.pointerEvents = "auto";
+            }, 1500);
+          }
+        });
+      })();
+    </script>
+</body>
+
+</html>

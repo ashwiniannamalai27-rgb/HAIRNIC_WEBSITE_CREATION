@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hairnic - Single Product Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar-container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h2 class="text-white mb-0">Hairnic</h2>
+                </a>
+
+                <!-- Cart Button: Triggers Slide-Out Drawer -->
+                <button type="button" class="btn btn-outline-light position-relative py-1 px-3 ms-auto me-2" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cart-counter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                    </span>
+                </button>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto align-items-lg-center">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="product.html" class="nav-item nav-link active">Products</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-white mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="how-to-use.html" class="dropdown-item">How To Use</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="blog.html" class="dropdown-item">Blog Articles</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="product.html" class="btn btn-dark py-2 px-4 ms-lg-3 d-none d-lg-inline-flex">Shop Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary hero-header py-5">
+        <div class="container text-center py-4">
+            <h1 class="display-5 text-white mb-3">Products</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white text-decoration-none" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white text-decoration-none" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Product Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 600px;">
+                <h1 class="text-primary mb-3"><span class="fw-light text-dark">Our Natural</span> Hair Products</h1>
+                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet, erat non malesuada consequat, nibh erat tempus risus.</p>
+            </div>
+            <div class="row g-4" id="product-grid">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-1.png" alt="Hair Shining Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Hair Shining Shampoo</h6>
+                        <!-- Feature 3: Size Variant Selector -->
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-2.png" alt="Anti-dandruff Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Anti-dandruff Shampoo</h6>
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-1.png" alt="Anti Hair Fall Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Anti Hair Fall Shampoo</h6>
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-2.png" alt="Hair Growing Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Hair Growing Shampoo</h6>
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-1.png" alt="Hair Shining Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Hair Shining Shampoo</h6>
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-2.png" alt="Anti-dandruff Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Anti-dandruff Shampoo</h6>
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-1.png" alt="Anti Hair Fall Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Anti Hair Fall Shampoo</h6>
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="col-md-6 col-lg-3 product-card-col">
+                    <div class="product-item border p-4 h-100 text-center" data-base-price="99.99">
+                        <img class="img-fluid" src="https://preview.themewagon.com/hairnic/img/product-2.png" alt="Hair Growing Shampoo">
+                        <div class="mb-2">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="text-muted">(99)</small>
+                        </div>
+                        <h6 class="product-title d-inline-block mb-1">Hair Growing Shampoo</h6>
+                        <div class="d-flex justify-content-center gap-1 my-2 size-selector-group">
+                            <button type="button" class="btn btn-xs btn-outline-primary active py-0 px-2 rounded-pill btn-size" data-size="250 ml" data-price="99.99" style="font-size: 11px;">250 ml</button>
+                            <button type="button" class="btn btn-xs btn-outline-secondary py-0 px-2 rounded-pill btn-size" data-size="500 ml" data-price="149.99" style="font-size: 11px;">500 ml</button>
+                        </div>
+                        <h5 class="text-primary product-price mb-3">$99.99</h5>
+                        <button class="btn btn-outline-primary px-3 w-100 btn-add-cart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <button class="btn btn-primary py-2 px-4" id="btn-load-more">Load More Products</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+    <!-- Slide-Out Shopping Cart Drawer (With Feature 5: Coupon Engine) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header bg-primary text-white">
+            <h5 class="offcanvas-title text-white mb-0" id="cartOffcanvasLabel">
+                <i class="fa fa-shopping-bag me-2"></i> Your Cart
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div id="cart-items-container" class="overflow-auto mb-3" style="max-height: 52vh;">
+                <!-- Dynamically generated items -->
+            </div>
+            <div class="border-top pt-3">
+                <!-- Feature 5: Promo Code Input Box -->
+                <div class="input-group mb-2">
+                    <input type="text" id="promo-code-input" class="form-control form-control-sm text-uppercase" placeholder="Try code: HAIR30">
+                    <button class="btn btn-dark btn-sm px-3" id="btn-apply-promo" type="button">Apply</button>
+                </div>
+                <div id="promo-status-msg" class="small mb-2" style="display: none;"></div>
+
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="small text-muted">Subtotal:</span>
+                    <span class="small fw-bold" id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-2" id="cart-discount-row" style="display: none !important;">
+                    <span class="small text-success">Discount (30%):</span>
+                    <span class="small fw-bold text-success" id="cart-discount">-$0.00</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3 border-top pt-2">
+                    <span class="h6 mb-0">Total:</span>
+                    <span class="h5 mb-0 text-primary fw-bold" id="cart-total">$0.00</span>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary py-2" id="btn-checkout">Proceed to Checkout</button>
+                    <button class="btn btn-outline-danger btn-sm" id="btn-clear-cart">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary py-5 my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between g-4">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h2 class="text-white mb-2"><span class="fw-light text-dark">Subscribe To Our</span> Newsletter</h2>
+                    <p class="text-white-50 mb-0">Get an instant 30% voucher code directly in your inbox.</p>
+                </div>
+                <div class="col-lg-5">
+                    <form action="#" method="POST" class="newsletter-wrapper m-0 ms-lg-auto">
+                        <div class="input-group">
+                            <input class="form-control rounded-pill-start py-3 ps-4" type="email" placeholder="Enter your email address" required style="border-radius: 50px 0 0 50px; border: none; outline: none;">
+                            <button class="btn btn-dark px-4" type="submit" style="border-radius: 0 50px 50px 0;">
+                                <i class="fa fa-paper-plane me-2"></i> Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white footer pt-5">
+        <div class="container pb-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-primary mb-3">Hairnic</h3>
+                    <p class="text-muted small">Pure botanical solutions created for nourished, vibrant, and thicker hair without harsh industrial chemicals.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Get In Touch</h5>
+                    <p class="text-muted small mb-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                    <p class="text-muted small mb-2"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 67890</p>
+                    <p class="text-muted small mb-3"><i class="fa fa-envelope text-primary me-2"></i>info@hairnic.com</p>
+                    <div class="d-flex gap-2">
+                        <a class="btn btn-square btn-outline-primary" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-primary" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Our Products</h5>
+                    <a class="btn btn-link" href="#">Hair Shining Shampoo</a>
+                    <a class="btn btn-link" href="#">Anti-dandruff Shampoo</a>
+                    <a class="btn btn-link" href="#">Anti Hair Fall Shampoo</a>
+                    <a class="btn btn-link" href="#">Hair Growing Shampoo</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+    <a class="btn btn-link" href="about.html">About Us</a>
+    <a class="btn btn-link" href="contact.html">Contact Us</a>
+    <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+    <a class="btn btn-link" href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top py-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <small class="text-muted">&copy; Hairnic, All Rights Reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <small><a href="index.html">Home</a></small>
+                        <small><a href="privacy.html">Cookies</a></small>
+                        <small><a href="contact.html">Help</a></small>
+                        <small><a href="contact.html">FAQs</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Complete Cart with Size Selector & Coupon Engine Script -->
+    <script>
+      (function () {
+        "use strict";
+
+        var CART_KEY = "hairnic_cart_data";
+        var PROMO_KEY = "hairnic_active_promo";
+
+        // 1. Storage Helpers
+        function getCart() {
+          try {
+            return JSON.parse(localStorage.getItem(CART_KEY)) || [];
+          } catch (e) {
+            return [];
+          }
+        }
+
+        function saveCart(cart) {
+          localStorage.setItem(CART_KEY, JSON.stringify(cart));
+          renderCart();
+        }
+
+        function getDiscountPercent() {
+          return localStorage.getItem(PROMO_KEY) === "HAIR30" ? 0.30 : 0;
+        }
+
+        // 2. Render Cart Badge & Drawer Elements
+        function renderCart() {
+          var cart = getCart();
+          var totalCount = 0;
+          var subtotal = 0;
+
+          cart.forEach(function (item) {
+            totalCount += item.qty;
+            subtotal += item.price * item.qty;
+          });
+
+          // Update badge
+          var badge = document.getElementById("cart-counter");
+          if (badge) badge.textContent = totalCount;
+
+          // Apply promo discounts
+          var discountPercent = getDiscountPercent();
+          var discountAmount = subtotal * discountPercent;
+          var finalTotal = subtotal - discountAmount;
+
+          var subtotalEl = document.getElementById("cart-subtotal");
+          if (subtotalEl) subtotalEl.textContent = "$" + subtotal.toFixed(2);
+
+          var discountRow = document.getElementById("cart-discount-row");
+          var discountEl = document.getElementById("cart-discount");
+          if (discountRow && discountEl) {
+            if (discountPercent > 0 && subtotal > 0) {
+              discountRow.style.setProperty("display", "flex", "important");
+              discountEl.textContent = "-$" + discountAmount.toFixed(2);
+            } else {
+              discountRow.style.setProperty("display", "none", "important");
+            }
+          }
+
+          var totalEl = document.getElementById("cart-total");
+          if (totalEl) totalEl.textContent = "$" + finalTotal.toFixed(2);
+
+          // Update items inside drawer
+          var container = document.getElementById("cart-items-container");
+          if (!container) return;
+
+          if (cart.length === 0) {
+            container.innerHTML = `
+              <div class="text-center py-5">
+                <i class="fa fa-shopping-basket fa-3x text-muted mb-3"></i>
+                <p class="text-muted">Your cart is empty.</p>
+              </div>`;
+            return;
+          }
+
+          container.innerHTML = cart.map(function (item, index) {
+            return `
+              <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+                <img src="${item.img}" alt="${item.name}" class="img-thumbnail me-2" style="width: 50px; height: 50px; object-fit: contain;">
+                <div class="flex-grow-1">
+                  <h6 class="mb-0 small fw-bold text-truncate" style="max-width: 130px;">${item.name}</h6>
+                  <span class="badge bg-light text-dark border px-1" style="font-size: 10px;">${item.size || '250 ml'}</span>
+                  <small class="text-muted ms-1">$${item.price.toFixed(2)}</small>
+                  <div class="d-flex align-items-center mt-1">
+                    <button class="btn btn-sm btn-outline-secondary py-0 px-2 btn-cart-dec" data-index="${index}">-</button>
+                    <span class="mx-2 small fw-bold">${item.qty}</span>
+                    <button class="btn btn-sm btn-outline-secondary py-0 px-2 btn-cart-inc" data-index="${index}">+</button>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <div class="small fw-bold mb-1">$${(item.price * item.qty).toFixed(2)}</div>
+                  <button class="btn btn-sm text-danger p-0 btn-cart-del" data-index="${index}">
+                    <i class="fa fa-trash-alt"></i>
+                  </button>
+                </div>
+              </div>`;
+          }).join("");
+        }
+
+        // 3. Feature 3: Size Variant Selector Interaction
+        document.querySelectorAll(".size-selector-group").forEach(function (group) {
+          group.addEventListener("click", function (e) {
+            var btn = e.target.closest(".btn-size");
+            if (!btn) return;
+
+            group.querySelectorAll(".btn-size").forEach(function (b) {
+              b.classList.remove("active", "btn-outline-primary");
+              b.classList.add("btn-outline-secondary");
+            });
+
+            btn.classList.add("active", "btn-outline-primary");
+            btn.classList.remove("btn-outline-secondary");
+
+            var price = btn.getAttribute("data-price");
+            var card = btn.closest(".product-item");
+            var priceEl = card.querySelector(".product-price");
+            if (priceEl) priceEl.textContent = "$" + parseFloat(price).toFixed(2);
+          });
+        });
+
+        // 4. Cart Click Handlers (+, -, Delete, Add to Cart)
+        document.addEventListener("click", function (e) {
+          // Decrement (-)
+          var decBtn = e.target.closest(".btn-cart-dec");
+          if (decBtn) {
+            var idx = parseInt(decBtn.getAttribute("data-index"), 10);
+            var cart = getCart();
+            if (cart[idx]) {
+              cart[idx].qty -= 1;
+              if (cart[idx].qty <= 0) {
+                cart.splice(idx, 1);
+              }
+              saveCart(cart);
+            }
+            return;
+          }
+
+          // Increment (+)
+          var incBtn = e.target.closest(".btn-cart-inc");
+          if (incBtn) {
+            var idx = parseInt(incBtn.getAttribute("data-index"), 10);
+            var cart = getCart();
+            if (cart[idx]) {
+              cart[idx].qty += 1;
+              saveCart(cart);
+            }
+            return;
+          }
+
+          // Delete (trash icon)
+          var delBtn = e.target.closest(".btn-cart-del");
+          if (delBtn) {
+            var idx = parseInt(delBtn.getAttribute("data-index"), 10);
+            var cart = getCart();
+            if (cart[idx]) {
+              cart.splice(idx, 1);
+              saveCart(cart);
+            }
+            return;
+          }
+
+          // Add to Cart
+          var addBtn = e.target.closest(".btn-add-cart");
+          if (addBtn) {
+            e.preventDefault();
+            var card = addBtn.closest(".product-item");
+            var name = card.querySelector(".product-title") ? card.querySelector(".product-title").textContent.trim() : "Organic Shampoo";
+            var activeSizeBtn = card.querySelector(".btn-size.active");
+            var size = activeSizeBtn ? activeSizeBtn.getAttribute("data-size") : "250 ml";
+            var priceText = card.querySelector(".product-price") ? card.querySelector(".product-price").textContent.replace(/[^0-9.]/g, "") : "99.99";
+            var price = parseFloat(priceText) || 99.99;
+            var img = card.querySelector("img") ? card.querySelector("img").src : "https://preview.themewagon.com/hairnic/img/product-1.png";
+
+            var cart = getCart();
+            var existing = cart.find(function (item) { return item.name === name && item.size === size; });
+
+            if (existing) {
+              existing.qty += 1;
+            } else {
+              cart.push({ name: name, size: size, price: price, img: img, qty: 1 });
+            }
+            saveCart(cart);
+
+            // Button visual feedback
+            var prevText = addBtn.textContent;
+            addBtn.textContent = "Added to the Cart";
+            addBtn.classList.remove("btn-outline-primary");
+            addBtn.classList.add("btn-success");
+            addBtn.style.pointerEvents = "none";
+
+            setTimeout(function () {
+              addBtn.textContent = prevText;
+              addBtn.classList.remove("btn-success");
+              addBtn.classList.add("btn-outline-primary");
+              addBtn.style.pointerEvents = "auto";
+            }, 1800);
+          }
+        });
+
+        // 5. Feature 5: Coupon Engine Logic
+        var promoBtn = document.getElementById("btn-apply-promo");
+        var promoInput = document.getElementById("promo-code-input");
+        var promoMsg = document.getElementById("promo-status-msg");
+
+        if (promoBtn && promoInput) {
+          promoBtn.addEventListener("click", function () {
+            var code = promoInput.value.trim().toUpperCase();
+            if (code === "HAIR30") {
+              localStorage.setItem(PROMO_KEY, "HAIR30");
+              if (promoMsg) {
+                promoMsg.style.display = "block";
+                promoMsg.className = "small text-success mb-2";
+                promoMsg.textContent = "Coupon HAIR30 applied! 30% discount added.";
+              }
+              renderCart();
+            } else {
+              if (promoMsg) {
+                promoMsg.style.display = "block";
+                promoMsg.className = "small text-danger mb-2";
+                promoMsg.textContent = "Invalid code. Try HAIR30";
+              }
+            }
+          });
+        }
+
+        // 6. Clear Cart & Checkout Buttons
+        var clearBtn = document.getElementById("btn-clear-cart");
+        if (clearBtn) {
+          clearBtn.addEventListener("click", function () {
+            if (getCart().length > 0 && confirm("Do you want to clear your cart?")) {
+              localStorage.removeItem(PROMO_KEY);
+              if (promoMsg) promoMsg.style.display = "none";
+              saveCart([]);
+            }
+          });
+        }
+
+        var checkoutBtn = document.getElementById("btn-checkout");
+        if (checkoutBtn) {
+          checkoutBtn.addEventListener("click", function () {
+            var cart = getCart();
+            if (cart.length === 0) {
+              alert("Your cart is empty! Add products first.");
+            } else {
+              alert("Thank you! Order placed successfully.");
+              localStorage.removeItem(PROMO_KEY);
+              saveCart([]);
+              var offcanvasEl = document.getElementById("cartOffcanvas");
+              var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+              if (offcanvas) offcanvas.hide();
+            }
+          });
+        }
+
+        // 7. Load More Toggle
+        var loadMoreBtn = document.getElementById("btn-load-more");
+        var productCards = document.querySelectorAll(".product-card-col");
+        if (loadMoreBtn && productCards.length > 4) {
+          for (var i = 4; i < productCards.length; i++) {
+            productCards[i].style.display = "none";
+          }
+          loadMoreBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            var isHidden = productCards[4].style.display === "none";
+            for (var i = 4; i < productCards.length; i++) {
+              productCards[i].style.display = isHidden ? "block" : "none";
+            }
+            loadMoreBtn.textContent = isHidden ? "Show Less" : "Load More Products";
+          });
+        }
+
+        // Initial render on load
+        renderCart();
+      })();
+    </script>
+</body>
+
+</html>
